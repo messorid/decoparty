@@ -1,23 +1,28 @@
 @import "tailwindcss";
 
 :root {
+  /* fondo y texto */
   --background: #ffffff;
   --foreground: #171717;
+
+  /* paleta Decoparty */
+  --color-primary: #FF1641;
+  --color-logo:    #1C195E;
+  --color-light:   #FFE2E6;
 }
 
 @theme inline {
+  /* mapeo para Tailwind v4.1 */
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-primary:    var(--color-primary);
+  --color-logo:       var(--color-logo);
+  --color-light:      var(--color-light);
+  --font-sans:        var(--font-geist-sans);
+  --font-mono:        var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+
 
 body {
   background: var(--background);
